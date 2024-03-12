@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+    <a href="../index.html"><B>RETORNAR INDEX</B></a><BR><BR><HR>
+
+    <h1>Trabalhando com video</h1>
+        <h2>video local</h2>
+        <!--width para n passar a tela e controls para surgir o controle de tela, poster para thumbnail disablePictureInPicture é case sensitive-->
+        <video poster="../Imgrep/backgroudv1.jpg" width="100%" controls controlslist="nodownload nofullscreen" disablePictureInPicture>
+            <!--como sempre tag source para fonte do video-->
+            <source src="../video/melting_tunnel_loop.mp4" type="video/mp4">
+        </video><br><br>
+
+        <h2>video online</h2>
+        <video  width="100%" controls controlslist="nodownload nofullscreen" disablePictureInPicture>
+            <!--como sempre tag source para fonte do video-->
+            <source src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_20mb.mp4" type="video/mp4">
+        </video><br>
+
+        <h2>iframe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nPEpaft1y1k?si=6tu1cvntlbCUEqD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+</body>
+</html>

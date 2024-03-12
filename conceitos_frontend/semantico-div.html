@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantico-div</title>
+
+    <!--PARTE EM CSS-->
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+        }
+        .topo{
+            background-color: greenyellow;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu{
+            background-color: blue;
+            overflow: hidden;
+        }
+        .menu a{
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+        .col50{
+            float: left;
+            width: 50%;
+            padding: 15px;
+            background-color: black;
+        }
+        .col50 h1{
+            color: yellow;
+        }
+        .col50 p{
+            color: white;
+        }
+        
+    </style>
+
+<!-- TODAS AS TAGS SEMANTICAS PODEM SER TROCADAS POR DIV-->
+</head>
+<body>
+        <!--tag semantica para cabeçalho header-->
+        <header class="topo">
+            <h1>TOPO</h1>
+                <p>lorem ipsum</p>
+        </header>
+        <!--tag semantica para menu nav-->
+        <nav class="menu">
+            <a href="../index.html"><B>RETORNAR INDEX</B></a>
+            <a href="../index.html"><B>RETORNAR INDEX</B></a>
+            <a href="../index.html"><B>RETORNAR INDEX</B></a>
+            <a href="../index.html"><B>RETORNAR INDEX</B></a>
+        </nav>
+        <!--tag semantica para menu section-->
+        <section class="col50">
+            <h1>COLUNA 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt a perferendis molestias aliquam nihil obcaecati, totam unde cupiditate maxime natus nemo. Unde quam labore itaque minus est vel minima quia!</p>
+        </section>
+
+        <section class="col50">
+            <h1>COLUNA 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt a perferendis molestias aliquam nihil obcaecati, totam unde cupiditate maxime natus nemo. Unde quam labore itaque minus est vel minima quia!</p>
+        </section>
+
+        <footer>
+            <p>Site feito por Gustavo Hartmann</p>
+        </footer>
+
+</body>
+</html>

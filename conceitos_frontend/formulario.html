@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <a href="../index.html"><B>RETORNAR INDEX</B></a><BR><BR><HR>
+
+        <h1>Formulario teste</h1>
+         <!--abrindo formulario/ action é para onde vai a info e method é o metodo como será-->
+        <form action="../arquivo.txt" method="get">
+            <!--CAMPO DE TEXTO--> <!--label: ideal para anteceder campo de form-->
+            <!--id e for para ref tags entre elas-->
+            <label for="campo_nome">Nome: </label> <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required> <!--CAIXA DE TEXTO-->
+            <br> <br>
+            <label for="campo_sobrenome">Sobrenome: </label> <input id="campo_sobrenome" type="text" placeholder="Digite seu sobrenome aqui"> <!--CAIXA DE TEXTO-->
+            <br> <br>
+            <label for="campo_senha">senha: </label> <input id="campo_senha" type="password" placeholder="Digite sua senha aqui" required> <!--CAIXA DE TEXTO PARA SENHA-->
+            <br> <br>
+            <label for="campo_email">e-mail: </label> <input id="campo_email" type="email" placeholder="Digite seu email aqui"required> <!--CAIXA DE TEXTO PARA EMAIL-->
+            <br> <br>
+            <label for="campo_aniver">Data de aniversário: </label> <input id="campo_aniver" type="date" placeholder="Digite sua data de nascimento"required> <!--CAIXA DE TEXTO PARA DATA-->
+            <br> <br>
+
+            <!--criando seleção de opção input type radio e "name" vincula entre as label e "value" é o que vai para o form-->
+            <h2>Animal de estimação </h2>
+            <label for="cachorro">Cachorro</label><input id="cachorro" type="radio" name="radanimal" value="cachorro"><br>
+            <label for="gato">Gato</label><input id="gato" type="radio" name="radanimal" value="gato"><br>
+            <label for="coelho">Coelho</label><input id="coelho" type="radio" name="radanimal" value="coelho"><br>
+
+            <!--check box igual a radio-->
+            <h2>opções</h2>
+            <label for="opa"></label>A-<input id="opa" type="checkbox" name="checkbox" value="a"><br>
+            <label for="opb"></label>B-<input id="opb" type="checkbox" name="checkbox" value="b"><br>
+            <label for="opc"></label>C-<input id="opc" type="checkbox" name="checkbox" value="c"><br>
+            <label for="opd"></label>D-<input id="opd" type="checkbox" name="checkbox" value="d"><br>
+
+            <!--botão para enviar form-->
+            <input type="submit" value="Enviar Form">
+
+        </form><br><hr><br>
+
+
+        <h1>Formulario teste2</h1>
+        <form action="../arquivo.txt" method="dialog">
+            <!--lista de opções tipo select-->
+            <h2>Escolha uma cor</h2>
+            <select name="cores" required>
+                <option selected disabled>Selecione uma cor</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="azul">Azul</option>
+                <option value="rosa">Rosa</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <br><br><br>
+            <!--caixa de texto maior-->
+            <Label for="texto_long"><b>Digite uma mensagem:</b></Label><br>
+            <textarea name="texto_long" id="texto_long" cols="50" rows="10" placeholder="Digite aqui a mensagem"></textarea>
+
+            <!--botão-->
+            <br><button name="erro">NÃO CLIQUE AQUI</button><br>
+
+            <input type="submit" value="Enviar Form">
+        </form>
+</body>
+</html>
